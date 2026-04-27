@@ -1,0 +1,54 @@
+TgCrypto is missing! Pyrogram will work the same, but at a much slower speed. More info: https://docs.pyrogram.org/topics/speedups
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Connection failed! Trying again...
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Connection failed! Trying again...
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Connection failed! Trying again...
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Connection failed! Trying again...
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Connection failed! Trying again...
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Unable to connect due to network issues: Connection timed out
+Connection failed! Trying again...
+🤖 Бот запущен...
+Traceback (most recent call last):
+  File "/Users/denis.mahov/PycharmProjects/telegram-duty-bot/bot.py", line 107, in <module>
+    asyncio.run(main())
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/denis.mahov/PycharmProjects/telegram-duty-bot/bot.py", line 102, in main
+    await app.start()
+  File "/Users/denis.mahov/PycharmProjects/telegram-duty-bot/venv/lib/python3.11/site-packages/pyrogram/methods/utilities/start.py", line 58, in start
+    is_authorized = await self.connect()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/denis.mahov/PycharmProjects/telegram-duty-bot/venv/lib/python3.11/site-packages/pyrogram/methods/auth/connect.py", line 40, in connect
+    await self.load_session()
+  File "/Users/denis.mahov/PycharmProjects/telegram-duty-bot/venv/lib/python3.11/site-packages/pyrogram/client.py", line 637, in load_session
+    await Auth(
+  File "/Users/denis.mahov/PycharmProjects/telegram-duty-bot/venv/lib/python3.11/site-packages/pyrogram/session/auth.py", line 274, in create
+    raise e
+  File "/Users/denis.mahov/PycharmProjects/telegram-duty-bot/venv/lib/python3.11/site-packages/pyrogram/session/auth.py", line 84, in create
+    await self.connection.connect()
+  File "/Users/denis.mahov/PycharmProjects/telegram-duty-bot/venv/lib/python3.11/site-packages/pyrogram/connection/connection.py", line 62, in connect
+    raise ConnectionError
+ConnectionError
